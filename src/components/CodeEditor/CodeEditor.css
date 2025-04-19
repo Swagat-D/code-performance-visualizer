@@ -1,0 +1,40 @@
+.code-editor {
+  flex: 1;
+  position: relative;
+  min-height: 350px;
+  border: 1px solid #e9ecef;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.monaco-editor-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Override some Monaco styles for better integration */
+.monaco-editor .margin {
+  background-color: #1e1e1e !important;
+}
+
+/* Add a loading state for the editor */
+.code-editor-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Style for read-only state */
+.code-editor.read-only .monaco-editor-container {
+  opacity: 0.8;
+}
+
+/* Styles for the line highlight */
+.highlight-line {
+  background-color: rgba(255, 255, 0, 0.2);
+  width: 100% !important;
+}

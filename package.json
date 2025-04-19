@@ -1,0 +1,58 @@
+{
+  "name": "code-performance-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "axios": "^1.6.2",
+    "chart.js": "^4.4.0",
+    "d3": "^7.8.5",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-server": "node server/server.js",
+    "dev": "concurrently \"npm run start\" \"npm run start-server\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "��#\u0000 \u0000c\u0000o\u0000d\u0000e\u0000-\u0000p\u0000e\u0000r\u0000f\u0000o\u0000r\u0000m\u0000a\u0000n\u0000c\u0000e\u0000-\u0000v\u0000i\u0000s\u0000u\u0000a\u0000l\u0000i\u0000z\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swagat-D/code-performance-visualizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Swagat-D/code-performance-visualizer/issues"
+  },
+  "homepage": "https://github.com/Swagat-D/code-performance-visualizer#readme"
+}
