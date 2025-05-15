@@ -8,7 +8,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const ExecutionFlow = ({ metrics, code }) => {
   const [executionData, setExecutionData] = useState(null);
-  const [lineData, setLineData] = useState([]);
+  const [ setLineData] = useState([]);
   
   useEffect(() => {
     if (metrics && metrics.executionFlow) {
@@ -23,7 +23,7 @@ const ExecutionFlow = ({ metrics, code }) => {
       }));
       setLineData(codeLines);
     }
-  }, [metrics, code]);
+  }, [metrics, code, setLineData]);
   
   // Process execution flow data for visualization
   const processExecutionFlowData = (executionFlow) => {
@@ -121,7 +121,6 @@ const ExecutionFlow = ({ metrics, code }) => {
         callbacks: {
           afterTitle: (context) => {
             const dataIndex = context[0].dataIndex;
-            const datasetIndex = context[0].datasetIndex;
             const item = executionData[dataIndex];
             return `Code: ${item.code}`;
           }

@@ -27,7 +27,7 @@ export const CodeExecutionProvider = ({ children }) => {
   const [input, setInput] = useState('');
   
   // State for execution
-  const [executionId, setExecutionId] = useState(null);
+  const [ setExecutionId] = useState(null);
   const [executionResult, setExecutionResult] = useState(null);
   const [metrics, setMetrics] = useState(null);
   const [isExecuting, setIsExecuting] = useState(false);
@@ -150,7 +150,7 @@ export const CodeExecutionProvider = ({ children }) => {
       setExecutionError(error.message || 'An error occurred during execution');
       setIsExecuting(false);
     }
-  }, [code, language, input, socket]);
+  }, [code, language, input, socket, setExecutionId]);
   
   // Clear results
   const clearResults = useCallback(() => {

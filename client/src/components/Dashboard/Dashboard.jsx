@@ -16,7 +16,6 @@ const Dashboard = () => {
     code,
     language,
     input,
-    executionResult,
     metrics,
     isExecuting,
     executionError,

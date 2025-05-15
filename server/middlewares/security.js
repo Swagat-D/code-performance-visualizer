@@ -23,12 +23,12 @@ const setupSecurityMiddleware = (app) => {
     // Content Security Policy
     // Adjust this based on your application's needs
     const cspDirectives = [
-      "default-src 'self'",
-      "script-src 'self'",
-      "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data:",
-      "font-src 'self'",
-      "connect-src 'self'"
+      "default-client 'self'",
+      "script-client 'self'",
+      "style-client 'self' 'unsafe-inline'",
+      "img-client 'self' data:",
+      "font-client 'self'",
+      "connect-client 'self'"
     ].join('; ');
     
     res.setHeader('Content-Security-Policy', cspDirectives);
